@@ -1,0 +1,24 @@
+﻿<Window x:Class="WpfApp1.MaHoa"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MaHoa" Height="700" Width="800">
+    <Grid Background="LightBlue">
+        <Label Content="CHƯƠNG TRÌNH MÃ HÓA VÀ GIẢI MÃ" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,30,0,0" VerticalAlignment="Top"/>
+        <Label Content="THÔNG ĐIỆP" FontSize="13" FontWeight="Bold" HorizontalAlignment="Left" Margin="101,324,0,0" VerticalAlignment="Top" Width="143"/>
+        <Image x:Name="AnhGoc"   HorizontalAlignment="Left" Height="197" Margin="314,84,0,0" VerticalAlignment="Top" Width="216" OpacityMask="Black"/>
+        <Button Content="CHỌN ẢNH!" Background="LightBlue" FontStyle="Italic" HorizontalAlignment="Left" Margin="158,156,0,0" VerticalAlignment="Top" Height="34" Width="86" BorderBrush="LightBlue" RenderTransformOrigin="0.535,0.678" Click="ChonAnh"/>
+        <TextBox x:Name="ThongDiep" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="244,317,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="38" Width="364"/>
+        <Button Content="MÃ HÓA" Background="LightBlue" FontWeight="Bold" HorizontalAlignment="Left" Margin="101,375,0,0" VerticalAlignment="Top" Height="34" Width="131" Click="btMaHoa" />
+        <TextBox IsEnabled="True" x:Name="ThongDiepMaHoa" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="244,373,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="38" Width="364"/>
+        <Button Content="GIẤU TIN" Background="LightBlue" FontWeight="Bold" HorizontalAlignment="Left" Margin="269,437,0,0" VerticalAlignment="Top" Height="34" Width="131" Click="GiauTin" />
+        <Label x:Name="Loi" Content="" Foreground="Red" FontStyle="Italic" FontSize="13" FontWeight="Bold" HorizontalAlignment="Left" Margin="24,587,0,0" VerticalAlignment="Top" Width="354" Height="76"/>
+        <Button Content="LẤY THÔNG ĐIỆP" Background="LightBlue" FontWeight="Bold" HorizontalAlignment="Left" Margin="426,437,0,0" VerticalAlignment="Top" Height="34" Width="131" Click="LayThongDiep"  />
+        <Button Content="GIẢI MÃ" HorizontalAlignment="Left" VerticalAlignment="Top" Background="LightBlue" Width="131" Height="36" BorderBrush="#FF707070" FontWeight="Bold" Click="btGiaiMa" Margin="101,492,0,0"/>
+        <TextBox x:Name="ThongDiepSauGiaiMa" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="244,492,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="38" Width="364"/>
+        <Button Content="LÀM MỚI" HorizontalAlignment="Left" VerticalAlignment="Top" Background="LightBlue" Width="132" Height="36" BorderBrush="#FF707070" FontWeight="Bold" Margin="360,551,0,0" Click="LamMoi"/>
+    </Grid>
+</Window>
